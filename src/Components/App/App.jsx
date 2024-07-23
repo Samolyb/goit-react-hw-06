@@ -12,8 +12,8 @@ const App = () => {
     const contacts = useSelector(selectContacts);
     const filter = useSelector(selectNameFilter);
 
-    const handleAddContact = (newContact) => {
-        dispatch(addContact(newContact.name, newContact.number));
+    const handleAddContact = (name, number) => {
+        dispatch(addContact(name, number));
     };
 
     const handleDeleteContact = (contactId) => {
